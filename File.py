@@ -2,14 +2,15 @@
 #-- always do comments and when doing comments alwasy remember
 #-- they are there to guide people that have never seen your code 
 #-- and they are there to guide yourself when you haven't looked at your 
-#-- code in a long time.  
+#-- code in a long time. Keep that in mind when creating comments to
+#-- help you in the long run
 
 
 
 current_room = ''                                               #-- current room is a variable to hold the current variable 
 
 
-#-- T
+
 rooms = {                                                       #-- This is the rooms avaiable to you during the game
     'Great Hall': {'South': 'Bedroom'},                             
     'Bedroom': {'North': 'Great Hall', 'East': 'Cellar'},
@@ -57,6 +58,7 @@ def dragonGame(_direction):
         #-- This is part of the games it shows the current room and the options available in each room
         print("Select direction from room: ", current_room, " your option(s) are ", rooms[current_room])
       
+ 
 
         #-- This while loop uses a flag to check the next input and only continues with the game
         #-- when a direction that is valid is selected so for ex: if south is selected but it doesn't exist
