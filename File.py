@@ -22,7 +22,7 @@ rooms = {                                                       #-- This is the 
 
 collected_rooms = {}                                            #-- this is an empty dictionary, this will show you 
                                                                 #-- all the rooms you have been in, I used this instead
-                                                                #-- of an array because arrays can have duplcates   
+                                                                #-- of an array because arrays can have duplcate of an item  
                                                                 #-- while a dictionary (sometimes called a map)
                                                                 #-- only hold unique values and you'll notice its purpose is 
                                                                 #-- to only tell you when you have vistied a room not how many times
@@ -122,7 +122,10 @@ def dragonGame(_direction):
     print("--------------------------------")
     print("--------------------------------")
     print("Congratulations you made it out of the castle and collected all the necessary Items")
-
+    print()
+    print()
+    print()
+    print()
             
         
 
@@ -142,14 +145,14 @@ def main():
  
     
    
-    print(rooms)
+ 
 
 
 
 
     print('Welcome to the game. You are at Start.\n')
     print("Controls East => E North => N South => S West => W")
-    user_direction = 'E'
+    user_direction = input("Please enter East (E) to start the game")
     # user_direction = input('Press E (East) to move to the Great Hall.\n')
     dragonGame( user_direction)
 
